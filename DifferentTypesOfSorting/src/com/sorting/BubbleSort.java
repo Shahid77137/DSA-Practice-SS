@@ -13,13 +13,18 @@ public class BubbleSort {
 	public static int[] bubbleSort(int[] arr,int n){
 		for (int i=0;i<n -1;i++){
 			int count = 0;
+			boolean flag = false;
 			for (int j=0;j<n-i-1;j++){
 				if (arr[j] > arr[j+1]){
 					swap(arr,j,j+1);
 					count++;
+					flag = true;
 				}
 			}
 			if (count == 0){
+				return arr;	
+			}
+			if (flag == false){
 				return arr;	
 			}
 		}
@@ -46,3 +51,8 @@ public class BubbleSort {
 }
 
 
+// Time Complexity:
+// Worst-case: O(n^2)
+// Best-case: O(n) when the array is nearly sorted
+// Average-case: O(n^2)
+// Space Complexity: O(1) (In-place sorting)
