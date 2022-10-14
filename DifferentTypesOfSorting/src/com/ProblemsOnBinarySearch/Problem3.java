@@ -1,5 +1,6 @@
 package com.ProblemsOnBinarySearch;
 // Search an eelement in Rotated Sorted Array
+// Binary Search approach Time complexity  is O(n)
 public class Problem3 {
     public static void main(String[] args){
         int arr[] = {7, 8, 1, 3, 5, 7, 9};
@@ -53,3 +54,38 @@ public class Problem3 {
         } 
     }
 }
+
+
+
+
+
+// Linear Search  Appoach Time complexity  is O(logn)
+
+class SearchInRotatedArray {
+    public static int search(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1; // If the array is empty or null, the element cannot be found.
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                return i; // Element found at index i.
+            }
+        }
+
+        return -1; // Element not found in the rotated sorted array.
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {4, 5, 6, 7, 0, 1, 2};
+        int target = 0;
+        int result = search(nums, target);
+
+        if (result != -1) {
+            System.out.println("Element " + target + " found at index " + result);
+        } else {
+            System.out.println("Element " + target + " not found in the array.");
+        }
+    }
+}
+
