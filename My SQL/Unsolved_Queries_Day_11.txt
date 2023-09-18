@@ -1,0 +1,107 @@
+✅ Write query to view all records of the table 
+
+✅ Write query to view all records of the table such that only rollNo, name and x_per column should be in result. 
+
+✅ Write query to display all distict value for column x_per 
+
+✅ Write query to view all records of the table such that rollNo should be displayed with heading Roll Number, name should be displayed with heading Student Name and x_per should be displayed with heading Inter Exam Percentage.
+
+✅ Write query to view all records of the table such that rollNo should be displayed with heading RN, name should be displayed with heading SName and x_per should be displayed with heading 10_Per.
+
+❌ Write query to add 10 to x_per and display with heading new_x_per (No need to use update query because this is one time result)
+
+✅ Write query to find all students whose percentage is is more than 74.69
+
+✅ Write query to find all students whose percentage is is more than or equal to 74.69
+
+✅ Write query to find rollNo as RN, name as Sname, x_per as 10_per whose x_per is less than 66.00
+
+✅ Write query to find all students whose x_per is less than or equal to 66.00
+
+✅ Write query to find all students whose state is Karnataka
+
+✅ Write query to find all students whose x_per is not equal to 33.00
+
+✅ Write a query to find all students whose x_per is more than or equals to 33.00 and less than or equals to 74.69;
+
+❌ Write a query to find all students whose x_per is neither more than or equals to 33.00 and nor less than or equals to 74.69;
+
+✅ Write a query to find all students whose percentage is more than or equal to 60.00 and the student must be from state Karnataka
+
+✅ Write a query to find all students whose percentage is more than or equal to 60.00 or the student must be from state Karnataka
+
+✅ Write a query to find all students whose percentage is more than 60.00 and less than 77.65 or whose state is Karnataka
+
+✅ Write a query to find all scholars whose state is either Karnataka, Punjab or Rajasthan
+
+✅ Write a query to find all scholars whose state is neither Karnataka nor Punjab nor Rajasthan
+
+❌ Write a query to find all scholars whose email is null
+
+❌ Write a query to find all scholars whose email is not null
+
+✅ Write a query to find all scholars whose name starts with letter 'a'
+
+✅ Write a query to find all scholars whose name ends with letter 'd'
+
+✅ Write a query to find all scholars whose name has letter 'C' anywhere
+
+✅ Write a query to find all scholars whose name has second letter 'B'
+
+✅ Write a query to find all scholars whose name has second last letter 'C'
+
+✅ Write a query to find all scholars whose name has 3 letters and middle letter should be 'D'
+
+✅ Write a query to show the records of students in the ascending order of x_per
+
+❌ Write a query to show the records of students in the ascending order of the x_per if tie in x_per they should be displayed in the descending order of the rollNo
+
+✅ Write a query to show name, email and x_per of students in the descending order of name
+
+✅ Write a query to show name, email and x_per of students in the descending order of x_per. You need to display only first 5 records. 
+
+❌ Write a query to show name, email and x_per of students in the descending order of x_per. You need to display from 3rd record and display 4 records.
+
+<!-- Queries for single row function -->
+
+✅ Write a query to display minimum percentage among all students.
+
+✅ Write a query to display maximum percentage among all students.
+
+✅ Write a query to display total percentage of all students.
+
+✅ Write a query to display average percentage of all students.
+
+❌ Write a query to count total students who have an email id, count total students who have x_per and counting of total students.
+
+❌ Write a query to rollno, name and email of all students but if a student do not have an email then 'No Email' should be displayed instead of null
+
+❌ Write a query to name, x_per and remark for student such that remark should be according to following criteria
+WHEN x_per < 33.00 - 'FAIL'
+WHEN x_per < 60.00 - 'PASS, IMPROVEMENT REQUIRED'
+WHEN x_per < 75.00 - 'PASS, GOOD JOB'
+ELSE 'GENIUS'
+
+For Multi row functions, Group by and having clause
+mysql> CREATE TABLE employee(
+	Eid VARCHAR(4) PRIMARY KEY,
+	Ename VARCHAR(10) NOT NULL,
+	Dept VARCHAR(10) NOT NULL,
+	Salary INT,
+	Designation VARCHAR(10) NOT NULL
+);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> INSERT INTO employee
+VALUES
+('E001', 'ABC', 'SALES', 25000, 'SM'),
+('E002', 'PQR', 'SALES', 35000, 'SM'),
+('E003', 'RTY', 'HRM', 58000, 'SSM'),
+('E004', 'RED', 'HRM', 38000, 'HR'),
+('E005', 'YUT', 'BDO', 25000, 'BM'),
+('E006', 'RFT', 'BDO', 48000, 'BM');
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Write query to find sum of salaries paid department wise Using WHERE clause
+❌ Write query to find sum of salaries paid department wise Using GROUP BY clause
