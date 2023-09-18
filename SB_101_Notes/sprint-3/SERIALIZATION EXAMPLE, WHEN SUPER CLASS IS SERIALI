@@ -1,0 +1,152 @@
+SERIALIZATION EXAMPLE, WHEN SUPER CLASS IS SERIALIZABLE
+package com.masaischool.iopackage;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+//super class, implements Serializable
+class ABC implements Serializable{
+	int a;
+	
+	ABC(int a){
+		this.a = a;
+	}
+	@Override
+	public String toString() {
+		return "ABC [a=" + a + "]";
+	}
+}
+//subclass, actually implements Serializable
+class BCD extends ABC{
+	int b;
+	public BCD(int a, int b) {
+		super(a);
+		this.b = b;
+	}
+	@Override
+	public String toString() {
+		return super.toString() + " BCD [b=" + b + "]";
+	}
+}
+public class SuperClassSerializableDemo {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		//Create object of class BCD
+		BCD bcd = new BCD(10, 20);
+		//Create an object of ObjectOutput interface
+		ObjectOutput oo = new ObjectOutputStream(new FileOutputStream("A.ser"));
+		//serialize subclass object
+		oo.writeObject(bcd);
+		//close the stream
+		oo.close();
+		
+		System.out.println("Serializarion Completed");
+		
+		ObjectInput oi = new ObjectInputStream(new FileInputStream("A.ser"));
+		BCD bcdTwo = (BCD)oi.readObject();
+		System.out.println(bcdTwo);	//a = 10, b = 20
+		oi.close();
+		System.out.println("Deserialization Completed");
+		
+	}
+}
+SERIALIZATION EXAMPLE, WHEN SUPER CLASS IS NOT SERIALIZABLE
+package com.masaischool.iopackage;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInput;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutput;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+//super-class does not implement Serializable
+class PQR{
+	int i;
+	
+	PQR(int i){
+		this.i = i;
+	}
+	@Override
+	public String toString() {
+		return "PQR [i=" + i + "]";
+	}
+}
+//sub-class does not implement Serializable
+class QRS extends PQR implements Serializable{
+	int j;
+	public QRS(int i, int j) {
+		super(i);
+		this.j = j;
+	}
+	@Override
+	public String toString() {
+		return super.toString() + " QRS [j=" + j + "]";
+	}
+}
+public class NoSuperClassSerializableDemo {
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+		//Create object of subclass QRS
+		QRS qrs = new QRS(10, 20);
+		//Create object of ObjectOutput interface
+		ObjectOutput oo = new ObjectOutputStream(new FileOutputStream("B.ser"));
+		//serialize object of subclass
+		oo.writeObject(qrs);
+		//close the stream
+		oo.close();
+		
+		System.out.println("Serialization completed");
+		
+		//open the file for deserialization
+		ObjectInput oi = new ObjectInputStream(new FileInputStream("B.ser"));
+		//deserialization
+		QRS qrsTwo = (QRS)oi.readObject();
+		System.out.println(qrsTwo);
+		System.out.println("Deserialization completed");
+		//close the stream
+		oi.close();
+		
+	}
+}
+NIO PACKAGE EXAMPLE
+package com.masaischool.iopackage;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
+import java.util.List;
+public class NioPackageDemo {
+	public static void main(String[] args) throws IOException, InterruptedException {
+		Path path = Paths.get("mydir\\a1.txt");
+		System.out.println("is file mydir\\a1.txt exists? " + Files.exists(path));
+		if(!Files.exists(path)) {
+			//you are here means no file actually exists
+			Files.createFile(path);
+		}
+		//you are here means file is created
+		System.out.println("is file mydir\\a1.txt exists? " + Files.exists(path));
+		//Write some content to file
+		byte bytes[] = "This is\nsome content\nfrom masai school,banglore\n".getBytes();
+		Files.write(path, bytes);
+		
+		List<String> cities = Arrays.asList("Delhi", "Mumbai", "Kolkata", "Srinagar", "Chandigarh");
+		Files.write(path, cities, StandardOpenOption.APPEND);
+		System.out.println("Total characters in files is " + Files.size(path));
+		
+		//Read content from file
+		List<String> contentLines = Files.readAllLines(path);
+		contentLines.forEach(System.out::println);
+		System.out.println();
+		Files.lines(path).map((s) -> s.length()).forEach(System.out::println);
+		
+		path = Paths.get("mydir\\peronal");
+		Files.createDirectories(path);
+		Thread.sleep(10000);
+		Files.delete(path);
+	}
+}
