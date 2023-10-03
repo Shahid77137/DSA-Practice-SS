@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38f0be4c-f5ed-48b6-b12c-8566010dc73f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +27,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Soumit__DSA__sheet",
-    "last_opened_file_path": "C:/Users/Soumit/OneDrive/Desktop/Shahid Soumit github/Shahid-Soumit/DSA_Questions"
+    "git-widget-placeholder": "Soumit",
+    "last_opened_file_path": "C:/Users/Soumit/OneDrive/Desktop/Shahid Soumit github/Shahid-Soumit/DSA_Questions/src/com/dsa_questions"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Soumit\OneDrive\Desktop\Shahid Soumit github\Shahid-Soumit\DSA_Questions\src\com\dsa_questions" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
