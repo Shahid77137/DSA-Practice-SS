@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5916fadd-2d50-4132-bd88-0ade52b546bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../DSA_Questions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DSA_Questions/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5916fadd-2d50-4132-bd88-0ade52b546bb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,15 +36,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Soumit__DSA__sheet&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Soumit/OneDrive/Desktop/Shahid Soumit github/Shahid-Soumit/DSA_Questions&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Soumit",
+    "last_opened_file_path": "C:/Users/Soumit/OneDrive/Desktop/Shahid Soumit github/Shahid-Soumit/DSA_Questions",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Soumit_DSA_sheet" />
