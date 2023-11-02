@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38f0be4c-f5ed-48b6-b12c-8566010dc73f" name="Changes" comment="" />
+    <list default="true" id="38f0be4c-f5ed-48b6-b12c-8566010dc73f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Soumit_DSA_sheet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Soumit_DSA_sheet/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

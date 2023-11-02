@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5916fadd-2d50-4132-bd88-0ade52b546bb" name="Changes" comment="" />
+    <list default="true" id="5916fadd-2d50-4132-bd88-0ade52b546bb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,10 +43,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Soumit",
-    "last_opened_file_path": "C:/Users/Soumit/OneDrive/Desktop/Shahid Soumit github/Shahid-Soumit/DSA_Questions",
+    "last_opened_file_path": "C:/Users/Soumit/OneDrive/Desktop/Shahid Soumit github/Shahid-Soumit/Soumit_DSA_sheet/out/production/Soumit_DSA_sheet",
     "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Soumit\OneDrive\Desktop\Shahid Soumit github\Shahid-Soumit\Soumit_DSA_sheet\out\production\Soumit_DSA_sheet" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Soumit_DSA_sheet" />
